@@ -673,4 +673,4 @@ class OpenaiChatModel(ChatModel):
         )
         return AssistantMessage._with_usage(
             await aparse_stream(stream, output_types), usage_ref=stream.usage_ref
-            )
+        )
